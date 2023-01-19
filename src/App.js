@@ -1,5 +1,5 @@
 import './App.css';
-import UserProfile from './UserProfile';
+import ShopItemFunc from './ShopItemFunc';
 
 
 function App() {
