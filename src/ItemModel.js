@@ -1,12 +1,12 @@
 class ItemModel{
     constructor(brand,title,description,descriptionFull,currency,price)
     {
-        this.brand= brand;
-        this.title= title;
-        this.description= description;
-        this.descriptionFull= descriptionFull;
-        this.currency= currency;
-        this.price= price;
+        this.item.brand = brand;
+        this.item.title = title;
+        this.item.description = description;
+        this.item.descriptionFull = descriptionFull;
+        this.item.currency = currency;
+        this.item.price = price;
     }
 }
 export default ItemModel;

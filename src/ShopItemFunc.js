@@ -22,7 +22,7 @@ function ShopItemFunc({ item }){
 }
 
 ShopItemFunc.propTypes = {
-  item:PropTypes.instanceOf(ItemModel).isRequired
+  item: PropTypes.instanceOf(ItemModel).isRequired
 }
 
 export default ShopItemFunc;
