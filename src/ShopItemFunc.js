@@ -1,6 +1,7 @@
-function ShopItemFunc(props){
-        const {item} = props;
+import PropTypes from 'prop-types';
+import ItemModel from'./ItemModel';
 
+function ShopItemFunc({ item }){
         return (
                 <div class="main-content">
                 <h2>{item.brand}</h2>
@@ -12,11 +13,16 @@ function ShopItemFunc(props){
                 <div class="highlight-window mobile"><div class="highlight-overlay"></div></div>
                 <div class="divider"></div>
                 <div class="purchase-info">
-                  <div class="price">{item.currency}{item.price}</div>
+                  <div class="price">{item.currency}{item.price.toFixed(2)}</div>
                   <button>Добавить в корзину</button>
                 </div>
               </div>     
         )
         
 }
+
+ShopItemFunc.propTypes = {
+  item:PropTypes.instanceOf(ItemModel).isRequired
+}
+
 export default ShopItemFunc;
